@@ -2,7 +2,72 @@
   Style your elements by creating CSS classes here.
   Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
 */
+.mochiy-pop-p-one-regular {
+  font-family: "Mochiy Pop P One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .menu {
-  color: blue;
+  color: black;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-logo {
+  width: 45px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.menu-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #e16914;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.menu-tagline {
+  font-family: 'Mochiy Pop P One';
+  font-size: 1.2rem;
+  color: #471f0a;
+  margin-top: 5px;
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: 3px solid #e76407;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  flex-wrap: nowrap;
+}
+
+.menu-image {
+  width: clamp(80px, 15vw, 250px);
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
