@@ -81,7 +81,7 @@ const menuItems = [
 
 const title = "Miso Bevo";
 const tagline = "Where Bevo Meets Bento";
-const togo = "logo.png";
+const logo = "logo.png";
 
 
 function App() {
