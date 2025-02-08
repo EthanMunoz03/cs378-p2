@@ -84,7 +84,7 @@ function App() {
     <div className="container">
 
       <div className="menu-header">
-        <img src="/images/logo.png" alt="Bevo Bento Logo" className="menu-logo" />
+        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Bevo Bento Logo" className="menu-logo" />
         <h1 className="menu-title">Miso Bevo</h1>
       </div>
       <p className="menu-tagline text-center">Where Bevo Meets Bento</p>

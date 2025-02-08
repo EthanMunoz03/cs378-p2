@@ -9,7 +9,7 @@ const MenuItem = ({ title, description, imageName, price }) => {
     return (
         <div className="d-flex align-items-center menu-item p-3">
 
-            <img src={`/images/${imageName}`} alt={title} className="menu-image rounded-lg me-3" />
+            <img src={`${process.env.PUBLIC_URL}/images/${imageName}`} alt={title} className="menu-image rounded-lg me-3" />
 
             <div className="flex-grow-1">
 
