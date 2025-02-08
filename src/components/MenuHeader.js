@@ -1,13 +1,14 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function MenuHeader() {
+function MenuHeader({ title, tagline, logo }) {
     return (
         <div>
             <div className="menu-header">
-                <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Bevo Bento Logo" className="menu-logo" />
-                <h1 className="menu-title">Miso Bevo</h1>
+                <img src={`${process.env.PUBLIC_URL}/images/${logo}`} alt="Bevo Bento Logo" className="menu-logo" />
+                <h1 className="menu-title">{title}</h1>
             </div>
-            <p className="menu-tagline">Where Bevo Meets Bento</p>
+            <p className="menu-tagline">{tagline}</p>
         </div>
     );
 }

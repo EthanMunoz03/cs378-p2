@@ -2,7 +2,7 @@ import './App.css';
 import MenuItem from './components/MenuItem';
 import MenuHeader from './components/MenuHeader';
 
-// import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
+import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
 // Menu data. An array of objects where each object represents a menu item. Each menu item has an id, title, description, image name, and price.
 // You can use the image name to get the image from the images folder.
@@ -79,20 +79,23 @@ const menuItems = [
   }
 ];
 
+const title = "Miso Bevo";
+const tagline = "Where Bevo Meets Bento";
+const togo = "logo.png";
+
 
 function App() {
   return (
     <div className="container">
 
-      <MenuHeader />
-
-      {/* <div className="menu-header">
-        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Bevo Bento Logo" className="menu-logo" />
-        <h1 className="menu-title">Miso Bevo</h1>
-      </div>
-      <p className="menu-tagline text-center">Where Bevo Meets Bento</p> */}
+      <MenuHeader 
+        title={title}
+        tagline={tagline}
+        logoImage={logo}
+      />
 
       <div className="menu">
+
         {menuItems.map((item) => (
           <MenuItem
             key={item.id}
@@ -102,6 +105,7 @@ function App() {
             price={item.price}
           />
         ))}
+
       </div>
     </div>
   );
