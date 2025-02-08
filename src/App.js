@@ -1,5 +1,6 @@
 import './App.css';
 import MenuItem from './components/MenuItem';
+import MenuHeader from './components/MenuHeader';
 
 // import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
@@ -83,11 +84,13 @@ function App() {
   return (
     <div className="container">
 
-      <div className="menu-header">
+      <MenuHeader />
+
+      {/* <div className="menu-header">
         <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Bevo Bento Logo" className="menu-logo" />
         <h1 className="menu-title">Miso Bevo</h1>
       </div>
-      <p className="menu-tagline text-center">Where Bevo Meets Bento</p>
+      <p className="menu-tagline text-center">Where Bevo Meets Bento</p> */}
 
       <div className="menu">
         {menuItems.map((item) => (
